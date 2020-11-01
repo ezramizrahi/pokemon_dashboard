@@ -96,7 +96,7 @@ const Team = () => {
               </Item>
             </React.Fragment>
             :
-            'hi'
+            'Loading data'
         }
         </Item.Group>
       </Card.Content>
