@@ -6,6 +6,7 @@ import { Card, Dropdown, Icon, Item, Label } from 'semantic-ui-react';
 const Team = () => {
   const [selectedData, setSelectedData] = useState([]);
   const [pokemonName, setPokemonName] = useState(pokemonTeam[0].value);
+  console.log(selectedData);
 
   useEffect(() => {
     const getSelectedData = async (pokemonName) => {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import LocationPokemon from './LocationPokemon';
 import { Card, Icon, Item, Loader, Label, List } from 'semantic-ui-react';
+import { formatText } from '../helpers';
 import vermilion from '../images/vermilion.png';
 import thunderbadge from '../images/thunderbadge.png';
 
@@ -19,14 +20,6 @@ const CurrentLocation = () => {
     };
     getLocation();
   }, [])
-
-  // format the location name
-  const formatText = (text) => {
-    const removeHyphens = text.replace(/-/g, ' ')
-    .split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-    .join(' ');
-    return removeHyphens;
-  };
 
   let pokemonEncounters;
   if (locationData.length !== 0) {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { formatText } from '../helpers';
 import { Label, Icon } from 'semantic-ui-react';
 
 const CatchLocation = ( props ) => {
@@ -17,14 +18,6 @@ const CatchLocation = ( props ) => {
     };
     getCatchLocation(id);
   }, [id])
-
-  // format the location name
-  const formatText = (text) => {
-    const removeHyphens = text.replace(/-/g, ' ')
-    .split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-    .join(' ');
-    return removeHyphens;
-  };
 
   return (
     <div>

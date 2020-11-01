@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { dates } from '../dates';
+import { getRandomItemFromArray } from '../helpers';
 import CatchLocation from './CatchLocation';
 import { Card, Feed, Label, Icon } from 'semantic-ui-react';
 
@@ -23,11 +24,7 @@ const FeedCard = () => {
     };
     getPokemon();
   }, [])
-
-  // helper functions
-  const getRandomItemFromArray = (array) => {
-    return array[Math.floor((Math.random()*array.length))];
-  };
+  
   const evolved = ['wartortle', 'blastoise'];
 
   return (
