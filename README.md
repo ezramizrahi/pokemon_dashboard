@@ -25,7 +25,7 @@ A Pokémon dashboard that displays information such as:
 
 It uses `async await` patterns and React Hooks to consume and display data from [PokéApi - The RESTful Pokémon API](https://pokeapi.co/).
 
-[Give the application a try (hosted on Netlify).](https://text-similarity.netlify.app/)
+[Give the application a try (hosted on Netlify).](https://pokemon-dashboard.netlify.app/)
 
 ### Built With
 
