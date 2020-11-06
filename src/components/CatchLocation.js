@@ -27,7 +27,9 @@ const CatchLocation = ( props ) => {
           <Icon name='map marker' /> {formatText(catchLocation.data[0].location_area.name)}
         </Label>
         :
-        'Unknown location'
+        <Label as='a' color='red' size='mini'>
+          <Icon name='question circle' /> Unknown Location
+        </Label>
       }
     </div>
   )
