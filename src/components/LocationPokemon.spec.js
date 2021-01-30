@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import LocationPokemon from './LocationPokemon';
 
 describe('LocationPokemon Component', () => {
-  it('renders loading message if props are empty', () => {
+  it('renders loading message if props is empty', () => {
     const props = {};
     const tree = renderer
       .create(<LocationPokemon {...props}></LocationPokemon>)

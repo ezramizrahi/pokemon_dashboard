@@ -17,7 +17,6 @@ const LocationPokemon = ( props ) => {
     };
     getPokemon(url);
   }, [url])
-  console.log('data url', url);
 
   return (
     <div>
