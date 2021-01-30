@@ -24,7 +24,9 @@ const FeedCard = () => {
     };
     getPokemon();
   }, [])
-  
+
+  console.log(pokemonData);
+
   const evolved = ['wartortle', 'blastoise'];
 
   return (

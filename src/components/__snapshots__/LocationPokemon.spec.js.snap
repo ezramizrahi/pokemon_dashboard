@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocationPokemon Component renders loading message if props are empty 1`] = `
+<div>
+  <div
+    className="ui mini text loader"
+  >
+    Fetching Pokémon Location Info...
+  </div>
+</div>
+`;

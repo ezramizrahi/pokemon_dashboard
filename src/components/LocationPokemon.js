@@ -17,6 +17,7 @@ const LocationPokemon = ( props ) => {
     };
     getPokemon(url);
   }, [url])
+  console.log('data url', url);
 
   return (
     <div>
@@ -32,7 +33,7 @@ const LocationPokemon = ( props ) => {
           </Label.Detail>
         </Label>
         :
-        <Loader size='mini'>Fetching Location Pokémon Info...</Loader>
+        <Loader size='mini'>Fetching Pokémon Location Info...</Loader>
       }
     </div>
   )
